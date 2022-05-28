@@ -29,8 +29,6 @@ namespace ADSProject.Controllers
             }
             catch (Exception)
             {
-
-                throw;
             }
            
         }

@@ -21,16 +21,17 @@ namespace ADSProject.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            var item = new List<EstudianteViewModel>();
             try
             {
-                var item = estudianteRepository.obtenerEstudiantes();
+               item = estudianteRepository.obtenerEstudiantes();
 
-                return View(item);
+                
             }
             catch (Exception)
             {
             }
-           
+            return View(item);
         }
 
         [HttpGet]
